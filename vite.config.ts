@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "path";
 import tailwindcss from "@tailwindcss/vite";
 
-const BASE_URL = "/";
+const BASE_URL = "/checklists";
 
 // https://vite.dev/config/
 export default defineConfig({
