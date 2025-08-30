@@ -2,7 +2,7 @@
 import MainNav from "./MainNav";
 import MobileNav from "./MobielNav";
 
-export default function SiteHeader() {
+const Header = () => {
     return (
         <header className="w-full border-b">
             <div className="flex w-full h-14 items-center justify-between px-4">
@@ -11,4 +11,6 @@ export default function SiteHeader() {
             </div>
         </header>
     );
-}
+};
+
+export default Header;

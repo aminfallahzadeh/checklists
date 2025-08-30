@@ -1,11 +1,16 @@
 // App.tsx
-import SiteHeader from "@/shared/components/SiteHeader";
+import { useMemo } from "react";
+import { AppRouter } from "./routers/AppRouter";
+import { toastHelper } from "./helpers/toastHelper";
 
 const App = () => {
+    const ToastProvider = useMemo(() => toastHelper.toastProvider, []);
+
     return (
-        <div className="flex min-h-screen flex-col">
-            <SiteHeader />
-        </div>
+        <>
+            <ToastProvider />
+            <AppRouter />
+        </>
     );
 };
 
